@@ -1,8 +1,6 @@
 let x = 0;
 
-document.querySelector('.left-arrow').addEventListener('click', () => {
-
-    x += 90;
+const rotate = () => {
 
     const cubes = document.querySelectorAll('.cube');
     Array.from(cubes).forEach(cube => {
@@ -10,5 +8,23 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
 
     });
 
+}
+
+// Left Arrow
+document.querySelector('.left-arrow').addEventListener('click', () => {
+
+    x += 90;
+    rotate();
+
+
+
+
+});
+
+// Right Arrow
+document.querySelector('.right-arrow').addEventListener('click', () => {
+
+    x -= 90;
+    rotate();
 
 });
