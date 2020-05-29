@@ -26,7 +26,11 @@
 	background-color: #ccc;
 	transform-style: preserve-3d;
 	position: relative;
-	transform: rotateX(90deg);
+	transform: rotateY(180deg);
+}
+
+.cube-2 {
+	z-index: 10;
 }
 
 .face {
@@ -34,13 +38,27 @@
 	height: 100%;
 	background-color: red;
 	position: absolute;
-	opacity: 0.7;
 	color: #fff;
 	font-size: 50px;
 }
 
 .front {
 	transform: translateZ(21vw);
+}
+
+.cube-1 .front {
+	background: url(images/slide-img-1.jpg) no-repeat 50% 0;
+	background-size: cover;
+}
+
+.cube-2 .front {
+	background: url(images/slide-img-1.jpg) no-repeat 50% -7vw;
+	background-size: cover;
+}
+
+.cube-3 .front {
+	background: url(images/slide-img-1.jpg) no-repeat 50% -14vw;
+	background-size: cover;
 }
 
 .back {
