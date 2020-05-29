@@ -16,9 +16,16 @@ document.querySelector('.left-arrow').addEventListener('click', () => {
     x += 90;
     rotate();
 
+});
 
+document.querySelector('.left-arrow').addEventListener('mouseover', () => {
+    x += 25;
+    rotate();
+});
 
-
+document.querySelector('.left-arrow').addEventListener('mouseout', () => {
+    x -= 25;
+    rotate();
 });
 
 // Right Arrow
@@ -27,4 +34,14 @@ document.querySelector('.right-arrow').addEventListener('click', () => {
     x -= 90;
     rotate();
 
+});
+
+document.querySelector('.right-arrow').addEventListener('mouseover', () => {
+    x -= 25;
+    rotate();
+});
+
+document.querySelector('.right-arrow').addEventListener('mouseout', () => {
+    x += 25;
+    rotate();
 });
